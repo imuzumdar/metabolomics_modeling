@@ -6,6 +6,12 @@ There are two main phases to this research:
 1. Predict whether subjects are in treatment or control group based on metabolomic data.
 2. Predict stage of ischemic events using metabolite measurements across time series data.
 
+Some cool outcomes of this project:
+
+1. Automated all feature engineering and parametric test scripts
+2. Identified 5 metabolites which predict ischmeic events extremely well, leading to potential +50k cost savings
+3. Developed ANOVA-based feature selection method which improved base model accuracy from 35 to 85.7 percent (useful tool to prevent overfitting on small datasets!)
+
 ## Treatment vs. Control Group Analysis
 
 To understand the relationship between the humanin treatment and various metabolite measurements, we built gradient boosted tree (GBT) models to predict whether a given pig was in the treatment or control group, based on their metabolite concentrations at four time points. In building these models, we first performed ANOVA based feature selection, a novel feature engineering technique (currently evaluating its benefits to other datasets and model instances) which selects variables based on variational analyses. For each metabolite, we fit an ANOVA model that considered the main effects of the treatment and time period variables, as well as their interaction. If the treatment variable was significant as either a main effect or an interaction, it was included in the GBT model. Otherwise, it was discarded. This procedure reduced the dimensionality of the dataset from 736 metabolites to 19.
