@@ -9,7 +9,7 @@ There are two main phases to this research:
 Some cool outcomes of this project:
 
 1. Automated all feature engineering and parametric test scripts
-2. Identified 5 metabolites which predict ischmeic events extremely well, leading to potential +50k cost savings
+2. Identified 5 metabolites which predict ischmeic events extremely well, leading to potential +50k cost savings and featured work in NIH Grant Proposal
 3. Developed ANOVA-based feature selection method which improved base model accuracy from 35 to 85.7 percent (useful tool to prevent overfitting on small datasets!)
 
 ## Treatment vs. Control Group Analysis
